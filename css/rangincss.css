@@ -1,0 +1,277 @@
+@font-face {
+    font-family: "sarbaz";
+    src:url("../font/7sarbaz.ttf") format('truetype');
+}
+@font-face {
+    font-family: "fanavary";
+    src:url("../font/3 fanavari.ttf") format('truetype');
+}
+@font-face {
+    font-family: "vazir";
+    src:url("../font/Vazir-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: "iran";
+    src:url("../font/iran2.ttf") format('truetype');
+}
+body{
+    direction: rtl;
+    margin: 0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+.yekan{
+    font-family: fanavary;
+}
+.sarbaz{
+    font-family: Sarbaz;
+}
+.vazir{
+    font-family: vazir;
+}
+.iran{
+    font-family: iran;
+}
+.i{
+    display: inline-block;
+    width: 14px;
+    height: 17px;
+}
+.i_lg{
+    display: block;
+    width: 10px;
+    float: right;
+    padding-top: 3px;
+}
+
+.btn-indigo{
+    color: #fff;
+    background: #38045c;
+}
+.bg-indigo3{
+    color: #fff;
+    background: rgba(34,3,55,1);
+}
+.btn-indigo:hover{
+    color: #fff!important;
+}
+.text-p{
+ display: inline-block;
+ float: right;
+
+}
+.active{
+    color: #6807ff!important;
+    background: #c789ff;
+    border-radius: 10px;
+}
+nav ul a{
+    cursor: pointer;
+}
+.size{
+    font-size: 10px;
+}
+.size_titel{
+    font-size: 14px;
+}
+.size_product{
+    font-size: 14px;
+}
+.size-footer{
+    font-size: 14px;
+}
+.btn_outline_indigo{
+    border-radius: 6px;
+    border: 1px solid #c789ff;
+    color: #c789ff;
+    transition: all .2s ease-in;
+}
+.text_indigo4{
+    color: #c789ff;
+}
+.btn_outline_indigo:hover{
+background:#6807ff ;
+    color: #fff !important;
+    border-color: #6807ff;
+}
+.input_search{
+background-color: #ecebff;
+}
+.search_icon{
+    top: 3px;
+    left: 0;
+    color: #6807ff;
+}
+.margin_right{
+    margin-right: 0;
+}
+.dropdown-menu{
+    border: 0;
+    background-color: rgba(34,3,55,1) !important;
+    box-shadow: -1px 4px 8px rgba(0,0,0,0.1);
+    margin-right: 15px;
+
+}
+.dropdown-item{
+    color: #FFFFFF;
+}
+.dropdown-menu a:hover{
+    background: #fff2fb!important;
+}
+.card-img-top{
+    border: 0!important;
+}
+.head-card{
+    max-width: 670px;
+    max-height: 570px;
+}
+ .btn_more{
+     max-width:400px !important;
+     min-width: 300px;
+ }
+ .bg-indigo2{
+     background:linear-gradient(to right,#38045c,#540D85);
+     color: #FFFFFF!important;
+ }
+ .img{
+height: 180px!important;
+ }
+ .bg-khaki{
+     background: #F3F0F4;
+ }
+ product{
+     transition: all .2s ease-in;
+ }
+ .product:hover{
+     box-shadow: 0 4px 16px rgba(0,0,0,.15);
+ }
+ .text-indigo{
+     color: #38045c;
+ }
+ .height{
+     height: 100px;
+ }
+.box{
+    height: 230px;
+    line-height: 17px;
+}
+.size3{
+    font-size: 20px;
+    font-weight: 600;
+}
+.size_titel_product{
+    font-size: 20px;
+    font-weight: 600;
+}
+p{
+    text-align: left;
+}
+.svg{
+    width: 24px;
+    height: 24px;
+}
+.border_indigo{
+    border: 2px solid rgba(56,4,92,1);
+
+}
+.more{
+    width: 48px;
+    height: 48px;
+}
+@media  (min-width: 768px) {
+    .size{
+        font-size: 12px;
+    }
+    .height{
+        height: 110px;
+    }
+    .box{
+        height: 270px;
+        line-height: 20px;
+    }
+    .size3{
+        font-size: 15px;
+    }
+    .svg{
+        width: 36px;
+        height: 36px;
+    }
+    .more{
+        width: 64px;
+        height: 64px;
+    }
+}
+.right{
+    text-align: right;
+}
+.hea{
+ justify-content: center;
+    display: flex;
+    height: 370px;
+}
+.footer-li{
+    list-style: none;
+    padding: 5px 5px;
+}
+.footer-li:first-child a{
+    color: #0b0b0b;
+    text-decoration: none;
+}
+.footer-li a{
+    color: rgba(55,53,54,1);
+    text-decoration: none;
+
+}
+.footer-li-logo{
+    display: flex;
+    float: right;
+    list-style: none;
+    padding: 10px;
+}
+.footer-li-logo a{
+    text-decoration: none;
+    color: rgba(55,53,54,1);
+}
+
+.bg_indigo_kam{
+    background: #c789ff;
+    color: #FFFFFF;
+}
+.size_footer-head{
+    font-size: 17px;
+}
+
+.size_footer{
+    font-size: 16px;
+}
+@media  (min-width: 1360px) {
+    .size{
+        font-size: 14px;
+    }
+    .box{
+        line-height: 25px;
+        height: 350px;
+    }
+    .size_titel{
+        font-size: 18px;
+    }
+    .height{
+        height: 130px;
+    }
+    .size_product{
+        font-size: 14px;
+    }
+    .size3{
+        font-size: 17px;
+    }
+    .svg{
+        width: 36px;
+        height: 36px;
+    }
+    .more{
+        width: 64px;
+        height: 64px;
+    }
+}

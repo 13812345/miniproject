@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="q">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cafeshop.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <title>cafe</title>
+</head>
+<body>
+<header class="margin-bottem">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark vazir">
+       <div class="container">
+           <a class="navbar-brand sarbaz text_warning2 ms-3 ms-sm-0 ms-lg-4">کافه سیرو</a>
+           <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu" type="button">
+               <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-list navbar-icon" viewBox="0 0 16 16">
+                   <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+               </svg>
+           </button>
+           <div class="collapse navbar-collapse ms-2" id="menu">
+               <ul class="navbar-nav col-7">
+                   <li class="nav-item">
+                       <a class="nav-link size1">خانه</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link size1">
+                           فروشگاه
+                       </a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link size1">
+                           درباره ما
+                       </a>
+                   </li>
+                    <li class="nav-item">
+                       <a class="nav-link size1">
+                           ارتباط باما
+                       </a>
+                    </li>
+               </ul>
+               <button class="btn outline my-md-1 my-2 size1 " type="button">ورود / عضویت</button>
+               <form class="d-flex">
+                   <div class="input-group">
+                     <input type="search" class="form-control my-2 my-md-1 ms-0 ms-md-2 search size1" placeholder="جست و جو"><button class="btn btn_Search my-2 my-md-1" type="submit">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                           </svg>
+                       </button>
+                   </div>
+               </form>
+           </div>
+       </div>
+    </nav>
+    <div class="container-fluid bg-header shadow3">
+        <div class="container">
+        <div class="row justify-content-between justify-content-lg-around">
+        <div class="col-6 col-md-6 col-lg-6 col-xl-6">
+            <h3 class="sarbaz bg-warning2 rounded-3 p-3 my-3 titel mt-lg-3 col-9 col-lg-6 col-xl-5">کافه سن سیرو</h3>
+            <p class="sarbaz text-white my-1 size2">جایی برای افراد خاص</p>
+            <p class="yekan text-grey2 size0">
+                کافه سن سیرو با کادری مجرب
+                کاربلد درخدمت شماعزیزان
+            </p>
+            <button type="button" class="btn outline text-center size4 vazir witdh2 mb-3 mb-md-4  mb-md-0">دیدن فروشگاه<i class="bi bi-chevron-left"></i></button>
+            <div id="slid" class="carousel slide col-lg-10 col-xl-9" data-bs-ride="carousel">
+                <div class="carousel-inner bg-warning2 rounded-3 mb-3 ">
+                    <div class="carousel-item active">
+                        <div class="col-12 p-2 p-lg-3 ">
+                        <div class="row justify-content-evenly">
+                            <a href="#" class="col-5 border-costom d-block text-black  rounded-3 text-center">
+                                <img src="img/pngwing.com(1).png" class="img-fluid size-img my-2 " alt="قهوه">
+                                <p class="size5  yekan  my-1 text-center">معجون کاکائو</p>
+                                <div class=" price-waring2 size5 yekan mb-2">30000تومان</div>
+                            </a>
+                            <a href="#" class="col-5 border-costom d-block text-black  rounded-3 text-center ">
+                                <img src="img/pngwing.com(2).png" class="img-fluid size-img my-2 " alt="قهوه">
+                                <p class="size5 yekan  my-1 text-center">معجون وانیل</p>
+                                <div class=" price-waring2 size5 yekan mb-2">30000تومان</div>
+                            </a>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-12  p-2 p-lg-3 ">
+                            <div class="row justify-content-evenly">
+                                <a href="#" class="col-5 border-costom d-block text-black  rounded-3 text-center">
+                                    <img src="img/pngwing.com(1).png" class="img-fluid size-img my-2 " alt="قهوه">
+                                    <p class="size5  yekan text-center my-1">معجون کاکائو</p>
+                                    <div class=" price-waring2 size5 yekan mb-2">30000تومان</div>
+                                </a>
+                                <a href="#" class="col-5 border-costom d-block text-black  rounded-3 text-center">
+                                    <img src="img/pngwing.com(2).png" class="img-fluid size-img my-2 " alt="قهوه">
+                                    <p class="size5 yekan text-center my-1">معجون وانیل</p>
+                                    <div class=" price-waring2 size5 yekan mb-2">30000تومان</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              <button type="button" class="carousel-control-prev" data-bs-target="#slid" data-bs-slide="prev">
+                      <span class="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                      </span>
+                </button>
+                <button type="button" class="carousel-control-next"  data-bs-target="#slid"  data-bs-slide="next" >
+                    <span class="next">
+                    <span class="carousel-control-next-icon"></span>
+                        </span>
+                </button>
+            </div>
+            </div>
+
+         <div class="col-6 col-sm-6 col-md-6 col-lg-5 col-xl-5 my-lg-3 my-md-2 my-sm-1  box-img mix">
+             <img class="col-11 col-sm-11 col-md-10 col-xl-9  rounded-2  img2" src="img/pexels6.jpg">
+         </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</header>
+<main class="mb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12  text-center vazir">
+                <div class="row justify-content-evenly  me-lg-3 me-xl-4 ">
+                <a class="col-5 col-md-3 col-xl-3 text-justify bg-warning2 rounded-3 hover2 mb-4 mb-md-0">
+                    <i class="material-icons icon2 mt-1 ">article</i>
+                    <h3 class="size6 ">رزرو کردن</h3>
+                    <p class="size7 py-xl-1 px-xl-2 .heaght-product">
+                        برای رزور کردن در کافه سن سیرو
+                         کلیک کنید تا به صفحه رزرو بروید
+
+                    </p>
+                </a>
+                <a class="col-5 col-md-3 col-xl-3 text-justify bg-black2 rounded-3 mb-4 mb-md-0  shadow2 hover2">
+                    <i class="material-icons icon2 mt-1">percent</i>
+                    <h3 class="size6">تخفیفات ویژه</h3>
+                    <p class="size7 py-xl-1 px-xl-2 text-justify">
+                        شما با هر خرید یک بن تخفیف دریافت
+                        میکنیداخر هر ماه هم یک قرعه کشی
+                        بین مشتریان ویژمون داریم
+                    </p>
+                </a>
+                    <a class="col-5 col-md-3 col-xl-3 text-justify bg-warning2 rounded-3 hover2">
+                        <i class="material-icons icon2 mt-1">toys</i>
+                        <h3 class="size6 ">ارسات سریع</h3>
+                        <p class="size7 py-xl-1 px-xl-2 text-justify">ما در انیجا درتلاشیم تا سفارشات شما
+                            هزیزان در سریع ترین زمان بدست
+                            شماعزیزان برسد</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center justify-content-md-around vazir">
+            <h3 class="sarbaz font6 text_warning2 khat col-12 mb-4">فروشگاه</h3>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3 rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="img-fluid img3  imgsize3 col-6 my-2" src="img/img_05.png" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">شکلات داغ</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+                    شکلات داغ مخصوص سراشپز پیشنهاد عالب رای شما دوستان عزیز
+                        بخر پشیمون نمیشی قرمدنگ طعم درجه یک
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 60%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3 rounded-3 text-center mb-4">
+            <div class="card bg-warning2 hover2">
+                <img class="img-fluid img3  imgsize3 col-6 my-2" src="img/img_02.png" alt="شیک شکلاتی">
+                <h3 class="card-title size6 mt-2">قهوه موکا</h3>
+                <p class="size7 card-text px-2 heaght-product mb-1">
+                    قهوه کموکا با شکلات فراوان طعمی بی نظیر عالی
+                    استفاده کنی پشیمون نمیشی لعله بخر حالش ببر
+                   </p>
+                <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 75%"></i>
+                     </span>
+                </div>
+                <div class="col-12 mb-2 card-footer border-0">
+                    <div class="row justify-content-evenly">
+                        <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                        <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3 rounded-3 text-center mb-4">
+                        <div class="card bg-warning2 hover2">
+                            <img class="img-fluid img3  imgsize3 col-6 my-2" src="img/img_06.png" alt="شیک شکلاتی">
+                            <h3 class="card-title size6 mt-2">قهوه ترک</h3>
+                            <p class="size7 card-text px-2 heaght-product mb-1">
+                                 شیک شکلاتی یک نوشیدنی عالی برای سرحال شدن
+                                 شیک شکلاتی یک نوشیدنی عالی برای سرحال شدن
+                            </p>
+                            <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 100%"></i>
+                     </span>
+                            </div>
+                            <div class="col-12 mb-2 card-footer border-0">
+                                <div class="row justify-content-evenly">
+                                    <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                                    <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="img-fluid img3  imgsize3 col-6 my-2" src="img/img_04.png" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">قهوه فرانسوی</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+قهوه فرانسوی اعلا طعم عالی ونتافاوت که تا به حال نچیشیده اید
+                        با یک بار سفارش مشتری ثابت ما باشید
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 80%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        </div>
+                    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center justify-content-lg-evenly">
+            <h3 class="sarbaz font6 text_warning2 khat col-12 mb-4">گالری</h3>
+            <a href="#" class="col-6 col-md-5 col-lg-4 ">
+                <img src="img/pexels5.jpg" alt="کافه" class="img-fluid rounded-3 col-11 img_cafe hover2" title="محیط کافه"/>
+            </a>
+            <a href="#" class="col-4 col-6 col-md-5 col-lg-4">
+                <img src="img/pexels6.jpg" alt="کافه" class="img-fluid rounded-3 col-11 img_cafe hover2" title="محیط کافه"/>
+            </a>
+            <a href="#" class="col-4 col-6 col-md-5 col-lg-4">
+                <img src="img/pexels2.jpg" alt="کافه" class="img-fluid rounded-3 col-11 img_cafe hover2" title="محیط کافه"/>
+            </a>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-evenly">
+            <div class="carousel slide col-sm-10 col-md-7 col-lg-6 col-xl-5 "  id="slid2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+            <div class="col-12 vazir mb-5">
+                <h3 class="sarbaz font6 text_warning2 khat col-5 mb-4">غذا</h3>
+                <div class="row justify-content-center">
+                <div class="card col-8 bg-black2 shadow1 p-0">
+                    <img class="img4 col-10 " src="img/67.png">
+                    <div class="bg-warning2 col-12 box ">
+                    <h3 class="card-title sizegd mt-5 sarbaz ps-3">دوبل برگر</h3>
+                    <p class="size-p card-text  heaght-product mt-2 height2 ps-3 pe-2">
+                        دوبل برگر خوشمزه لذیذ با بهترین مواد غذایی
+                        با گوشت بره 90% خالص  وپنیر پیتزا درجه
+                        1 موزیلا کافیه یک بار سفارش بدی تامشتری ثابت ما باشید
+                    </p>
+                    <div class="col-12 mt-3 ps-3">
+                    <div class="col-xl-3 py-2 box-star bg-black2">
+                    <span class="d-block text-left star2">
+                        <i class="i_star " style="width: 100%"></i>
+                     </span>
+                    </div>
+                        <p class="size-product2 ">50000تومان</p>
+                    </div>
+                        <a class="btn btn-lg bg-black2 col-11 d-block text-center size-card2 hover4 my-3 ">افزودن به سبد خرید</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+                </div>
+                    <div class="carousel-item ">
+                        <div class="col-12 vazir mb-5">
+                            <h3 class="sarbaz font6 text_warning2 khat col-5 mb-4">غذا</h3>
+                            <div class="row justify-content-center">
+                                <div class="card col-8 bg-black2 shadow1  p-0">
+                                    <img class="img4 col-10 " src="img/pngwing.com-1.png">
+                                    <div class="bg-warning2 col-12 box ">
+                                        <h3 class="card-title sizegd mt-5 sarbaz ps-3"> برگر</h3>
+                                        <p class="size-p card-text  heaght-product mt-2 height2 ps-3 pe-2">
+                                            دوبل برگر خوشمزه لذیذ با بهترین مواد غذایی
+                                            با گوشت بره 90% خالص  وپنیر پیتزا درجه
+                                            1 موزیلا کافیه یک بار سفارش بدی تامشتری ثابت ما باشید
+                                        </p>
+                                        <div class="col-12 mt-3 ps-3">
+                                            <div class="col-xl-3 py-2 box-star bg-black2">
+                    <span class="d-block text-left star2">
+                        <i class="i_star " style="width: 100%"></i>
+                     </span>
+                                            </div>
+                                            <p class="size-product2 ">50000تومان</p>
+                                        </div>
+                                        <a class="btn btn-lg bg-black2 col-11 d-block text-center size-card2 hover4 my-3 ">افزودن به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <button type="button" class="carousel-control-prev n2" data-bs-target="#slid2" data-bs-slide="prev">
+                      <span class="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                      </span>
+                </button>
+                <button type="button" class="carousel-control-next n2"  data-bs-target="#slid2"  data-bs-slide="next" >
+                    <span class="next">
+                    <span class="carousel-control-next-icon"></span>
+                        </span>
+                </button>
+            </div>
+            <div class="carousel slide col-12 col-sm-10 col-md-7 col-lg-6  col-xl-5" id="slid3" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="col-12  vazir ">
+                <h3 class="sarbaz font6 text_warning2 khat col-5 mb-4"> کیک ودسر</h3>
+                <div class="row justify-content-center ">
+                <div class="card col-8 bg-warning2 shadow1 p-0">
+                    <img class="img4 col-10 " src="img/cake-9747.png">
+                    <div class="bg-black2 col-12 box ">
+                        <h3 class="card-title sizegd mt-5 sarbaz  ps-3">کیک کاکائویی</h3>
+                        <p class="size-p card-text  heaght-product mt-2 height2 ps-3 pe-2">
+                            کیک  خوشمزه لذیذ با بهترین مواد غذایی
+                            با کاکائو تازه 90% خالص  مواذ اولیه درجه
+                            1  کافیه یک بار سفارش بدی تامشتری ثابت ما باشید
+                        </p>
+                        <div class="col-12 mt-3 ps-3 ">
+
+                            <div class="col-xl-3 py-2 box-star bg-warning2">
+                    <span class="d-block text-left star ">
+                        <i class="i_star " style="width: 80%"></i>
+                     </span>
+                            </div>
+                            <p class="size-product2 ">1000000تومان</p>
+
+                        </div>
+                        <a class="btn btn-lg bg-warning2 col-11 d-block text-center size-card2  my-3 ">افزودن به سبد خرید</a>
+                    </div>
+                </div>
+                            </div>
+
+                    </div>
+            </div>
+                    <div class="carousel-item ">
+                        <div class="col-12  vazir">
+                            <h3 class="sarbaz font6 text_warning2 khat col-5 mb-4"> کیک ودسر</h3>
+                            <div class="row justify-content-center ">
+                                <div class="card col-8 bg-warning2 shadow1 p-0">
+                                    <img class="img4 col-10 " src="img/ki.png">
+                                    <div class="bg-black2 col-12 box ">
+                                        <h3 class="card-title sizegd mt-5 sarbaz ps-3">کیک کاکائویی</h3>
+                                        <p class="size-p card-text  heaght-product mt-2 height2 ps-3 pe-2">
+                                            کیک  خوشمزه لذیذ با بهترین مواد غذایی
+                                            با کاکائو تازه 90% خالص  مواذ اولیه درجه
+                                            1  کافیه یک بار سفارش بدی تامشتری ثابت ما باشید
+                                        </p>
+                                        <div class="col-12 mt-3 ps-3 ">
+
+                                            <div class="col-xl-3 py-2 box-star bg-warning2">
+                    <span class="d-block text-left star ">
+                        <i class="i_star " style="width: 80%"></i>
+                     </span>
+                                            </div>
+                                            <p class="size-product2 ">1000000تومان</p>
+
+                                        </div>
+                                        <a class="btn btn-lg bg-warning2 col-11 d-block text-center size-card2  my-3 ">افزودن به سبد خرید</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+                <button type="button" class="carousel-control-prev n2" data-bs-target="#slid3" data-bs-slide="prev">
+                      <span class="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                      </span>
+                </button>
+                <button type="button" class="carousel-control-next n2"  data-bs-target="#slid3"  data-bs-slide="next" >
+                    <span class="next">
+                    <span class="carousel-control-next-icon"></span>
+                        </span>
+                </button>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center justify-content-md-around vazir">
+            <h3 class="sarbaz font6 text_warning2 khat col-12 mb-4">سردونه</h3>
+            <div class="col-8 col-sm -7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="img-fluid img3  imgsize3" src="img/m1.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">شیک شکلاتی</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">شیک شکلاتی یک نوشیدنی
+                        عالی برای سرحال شدن
+                     بخر تا سرحال بشی تو این گرما تایستون واقعا میچسبه
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 50%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="img-fluid img3  imgsize3" src="img/m2.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">معجون</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">شیک شکلاتی یک نوشیدنی
+                        عالی برای سرحال شدن
+                        بزن به بدت حالش ببر پیشنهاد میکنم یکبار بخریش طعمش درجه یک
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 70%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="img-fluid img3  imgsize3" src="img/m3.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">شیک اناناس</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">شیک اناناس  نوشیدنی
+                        عالی برای سرحال شدن
+                   بزن به بدت حالش ببر پیشنهاد میکنم یکبار بخریش طعمش درجه یک
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 60%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="card-img img3  imgsize3" src="img/sheykalbako.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">شیک توت فرنگی</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">شیک شکلاتی یک نوشیدنی
+                        عالی برای سرحال شدن
+                        بزن به بدت حالش ببر پیشنهاد میکنم یکبار بخریش طعمش درجه یک
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 100%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center justify-content-md-around vazir">
+            <h3 class="sarbaz font6 text_warning2 khat col-12 mb-4">گرمونه</h3>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="card-img img3  imgsize3" src="img/61765_944.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">شکلات داغ</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+                        شکلات داغ مخصوص سراشپز پیشنهاد عالب رای شما دوستان عزیز
+                        بخر پشیمون نمیشی قرمدنگ طعم درجه یک
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 60%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="card-img img3  imgsize3" src="img/61761_681.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">قهوه موکا</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+                        قهوه کموکا با شکلات فراوان طعمی بی نظیر عالی
+                        استفاده کنی پشیمون نمیشی لعله بخر حالش ببر
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 75%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="card-img img3  imgsize3" src="img/Turkish-coffee.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">قهوه ترک</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+                        شیک شکلاتی یک نوشیدنی عالی برای سرحال شدن
+                        شیک شکلاتی یک نوشیدنی عالی برای سرحال شدن
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 100%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-sm-7 col-md-5 col-lg-4 col-xl-3  course-item   rounded-3 text-center mb-4">
+                <div class="card bg-warning2 hover2">
+                    <img class="card-img img3  imgsize3" src="img/2-1.jpg" alt="شیک شکلاتی">
+                    <h3 class="card-title size6 mt-2">قهوه فرانسوی</h3>
+                    <p class="size7 card-text px-2 heaght-product mb-1">
+                        قهوه فرانسوی اعلا طعم عالی ونتافاوت که تا به حال نچیشیده اید
+                        با یک بار سفارش مشتری ثابت ما باشید
+                    </p>
+                    <div class="col-12">
+                    <span class="d-block text-left star ">
+                        <i class="i_star" style="width: 80%"></i>
+                     </span>
+                    </div>
+                    <div class="col-12 mb-2 card-footer border-0">
+                        <div class="row justify-content-evenly">
+                            <a  class="btn bg-black2 col-6 hover3 size-card">افزودن به سبد خرید</a>
+                            <p  class="col-5 size-product m-0 pt-2">30000تومان</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+</main>
+<footer>
+    <div class="container-fluid bg-black2">
+        <div class="container">
+        <div class="row  vazir">
+            <h3 class="h3 sarbaz my-3">
+                کافه سیرو
+            </h3>
+            <div class="col-10 col-md-4 col-lg-3">
+                <p class="size-footer">
+                    زاهدان خیابان دانشگه دانشگاه 1 پارک علم وفناوری شرکت ایکس واحد3
+                    زاهدان خیابان دانشگاه دانشگاه 1 پارک علم وفناوری شرکت ایکس واحد3
+                    زاهدان خیابان دانشگاه دانشگاه 1 پارک علم وفناوری شرکت ایکس واحد3
+                </p>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 mb-3 mb-md-0">
+                <ul class="list-group ul-footer">
+                    <li class="list-group-item sizef py-0 px-0 px-md-2 text_warning2 sarbaz">دسترسی سریع</li>
+                    <li class="list-group-item"><a href="">خانه</a></li>
+                    <li class="list-group-item"><a href="">درباره ما</a></li>
+                    <li class="list-group-item"><a href="">ارتباط با ما</a> </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <ul class="list-group ul-footer">
+                    <li class="list-group-item sizef py-0 px-0 px-md-2 text_warning2 sarbaz">خدمات</li>
+                    <li class="list-group-item"><a href="">پشتیبانی</a></li>
+                    <li class="list-group-item"><a href="">ارسال باگ</a></li>
+                    <li class="list-group-item"><a href="">نحوه ثبت سفارش</a> </li>
+                </ul>
+            </div>
+            <div class="col-10 col-md-5 col-lg-3 mb-2 mb-md-2">
+                <h3 class="sarbaz col-12 sizef text-right mb-3">
+                    جدیدترین اخبار
+                </h3>
+                <form>
+                    <div class="input-group">
+                        <input class="form-control size7" placeholder="ایمیل خود را وارد کنید" type="text">
+                        <button type="button" class="btn btn-warning">ارسال</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 mt-2 border-footer">
+                <p class="size7 text-center text_warning3 pt-3">
+                    استفاده از مطالب فروشگاه اینترنتی رنگین مارکت برگر فقط برای مقاصد غیرتجاری و با ذکر منبع بلامانع است. کلیه حقوق این سایت متعلق به رنگین مارکت می‌باشد
+
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+<script>
+    var hover=$('.hover2');
+    var star=hover.find('.star');
+    var i_star=star.find('.i_star');
+    var hover2=hover.find('.hover3');
+    hover.hover(function (){
+        $(this).find(i_star).addClass('active1');
+        $(this).find(hover2).addClass('active2');
+    },function (){
+        i_star.removeClass('active1');
+        hover2.removeClass('active2');
+    });
+</script>
+</body>
+</html>
